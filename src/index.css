@@ -1,0 +1,36 @@
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-container .box{
+  width: 28%;
+  /* background-color: black; */
+  margin:10px;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width : 900px) {
+  .flex-container .box{
+    width:45%;
+  }
+}
+
+@media screen and (max-width : 500px) {  
+  .flex-container .box{
+    width: 90%;
+  }
+}
+
+.questions-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.questions-list .question{
+  display: flex;
+  max-width:900px;
+  border : 1px solid grey;
+}
